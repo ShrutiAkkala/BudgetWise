@@ -289,15 +289,5 @@ BudgetTracker/
 
 ---
 
-## 👤 Demo Credentials
-
-```
-Username: shrutia
-Password: Demo1234
-```
-
-> **Note:** Uses Plaid Sandbox. To connect a bank during demo, use username `user_good` / password `pass_good`.
-
----
 
 Built with ❤️ using Spring Boot, React, and Claude AI.
