@@ -1,0 +1,32 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/budgettracker
+    driver-class-name: org.postgresql.Driver
+    username: shrutiakkala
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+application:
+  jwt:
+    secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+    expiration: 86400000  # 24 hours in ms
+
+plaid:
+  client-id: 69cdcc1a4669aa000dadbf76
+  secret: d48c5002d0a762ff718ea56164b256
+  environment: sandbox
+
+anthropic:
+  api-key: ${ANTHROPIC_API_KEY}
+  model: claude-opus-4-6
+
+logging:
+  level:
+    com.budget.tracker: DEBUG
